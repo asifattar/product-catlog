@@ -1,0 +1,17 @@
+<div>
+    <div class="card mb-4" 
+    [ngClass]="{
+    'bg-primary' : prod.pCAtg === 'catlog',  
+    'bg-info' : prod.pCAtg === 'product'
+    }"
+    *ngFor="let prod of dashBordData">
+    <div class="card-header">
+      <h3>{{prod.pname}}</h3>
+    </div>
+    <div class="card-body">
+      <p>
+          {{prod.pDescription}}
+      </p>
+    </div>
+    </div>
+</div> 

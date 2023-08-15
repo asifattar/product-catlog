@@ -1,0 +1,19 @@
+
+<div>
+    <div class="form-group">
+      <label for="productName">Product Name</label>
+      <input type="text" id="productName" #productName class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="productName"> Product Discription</label>
+      <input type="text" id="productDiscription" #productDiscription class="form-control">
+    </div>
+    <div class="form-group text-right">
+      <button class="btn btn-info mr-3" 
+      (click)="addProductDeatails(productName,productDiscription,'product')"
+      >Add as Product</button>
+      <button class="btn btn-info" 
+      (click)="addProductDeatails(productName,productDiscription,'catlog')"
+      >Add as catalog</button>
+    </div>
+  </div>
